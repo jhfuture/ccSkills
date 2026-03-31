@@ -1,0 +1,23 @@
+{
+  "skill_name": "sync-repos",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我同步更新当前目录下的所有 git 仓库",
+      "expected_output": "扫描并列出所有仓库，等待用户确认后执行同步，输出详细的更新报告",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我这里有好几个项目，想一次性把它们都更新到最新代码",
+      "expected_output": "识别所有 git 仓库，确认后批量拉取，显示每个仓库的更新状态和文件变更",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "批量 git pull 所有仓库",
+      "expected_output": "扫描仓库列表，用户确认后执行同步，对有问题的仓库给出跳过提示",
+      "files": []
+    }
+  ]
+}
